@@ -9,6 +9,15 @@ body, html {
 
 .container {
     text-align: center;
+    display: inline-flex; /* Changed to inline-flex to limit container width to its content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align container's items */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Adjust the gap between buttons as needed */
 }
 
 button {
@@ -16,15 +25,10 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
-
-/* Initial size for the "Yes" button */
-#yesButton {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Ensure smooth scaling transition for all buttons */
 }
 
 #valentineQuestion {
-    font-size: 24px; /* Example size, adjust as needed */
-    margin: 0 0 20px; /* Adds space below the text, adjust as needed */
-    /* Add any other font styling as desired */
+    font-size: 24px;
+    margin: 0 0 20px;
 }

@@ -40,3 +40,12 @@ document.getElementById('noButton').addEventListener('click', function() {
             break;
     }
 });
+
+document.getElementById('yesButton').addEventListener('click', function() {
+    // Change the GIF to a new one
+    document.getElementById('valentineImage').src = "images/catheart.gif";
+
+    // Hide both buttons
+    document.getElementById('yesButton').style.display = 'none';
+    document.getElementById('noButton').style.display = 'none';
+});

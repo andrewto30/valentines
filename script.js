@@ -36,7 +36,7 @@ document.getElementById('noButton').addEventListener('click', function() {
             document.getElementById('noButton').disabled = true;
             break;
         default:
-            // Just in case, but we shouldn't get here
+            // Just in case, but we shouldn't get heref
             break;
     }
 });

@@ -22,6 +22,15 @@ document.getElementById('noButton').addEventListener('click', function() {
             document.getElementById('noButton').innerHTML = 'Last chance';
             break;
         case 5:
+            document.getElementById('noButton').innerHTML = 'You are being silly';
+            break;
+        case 6:
+            document.getElementById('noButton').innerHTML = 'Be fr';
+            break;
+        case 7:
+            document.getElementById('noButton').innerHTML = 'i will die alone';
+            break;
+        case 8:
             document.getElementById('noButton').innerHTML = ':(';
             // Disable the "No" button after 5 clicks
             document.getElementById('noButton').disabled = true;

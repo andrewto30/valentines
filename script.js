@@ -44,7 +44,7 @@ document.getElementById('noButton').addEventListener('click', function() {
 document.getElementById('yesButton').addEventListener('click', function() {
     // Change the GIF to a new one and scale it
     let valentineImage = document.getElementById('valentineImage');
-    valentineImage.src = "images/catheart.gif";
+    valentineImage.src = "images/melody-hearts.gif";
     valentineImage.style.transform = "scale(2)"; // Increase the scale as desired
 
     // Change the Valentine's question

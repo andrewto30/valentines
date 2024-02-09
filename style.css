@@ -33,7 +33,7 @@ body, html {
 #imagesContainer {
     display: flex; /* Align images next to each other */
     justify-content: center; /* Center images container */
-    gap: 1gpx; /* Space between images */
+    gap: 1px; /* Space between images */
 }
 
 button {

@@ -4,7 +4,7 @@ document.getElementById('noButton').addEventListener('click', function() {
     noClickCount++; // Increment the "No" button click counter
 
     // Scale up the "Yes" button with each click
-    let scaleValue = 1.0 + (0.25 * noClickCount); // Increase scale by 0.1 each time
+    let scaleValue = 1.0 + (0.4 * noClickCount); // Increase scale by 0.1 each time
     document.getElementById('yesButton').style.transform = `scale(${scaleValue})`;
 
     // Change the text on the "No" button based on the click count

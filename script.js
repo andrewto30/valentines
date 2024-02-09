@@ -41,13 +41,26 @@ document.getElementById('noButton').addEventListener('click', function() {
     }
 });
 
-document.getElementById('yesButton').addEventListener('click', function() {
-    // Change the GIF to a new one and scale it
-    let valentineImage = document.getElementById('valentineImage');
-    valentineImage.src = "images/melody-hearts.gif";
-    valentineImage.style.transform = "scale(2)"; // Increase the scale as desired
+// document.getElementById('yesButton').addEventListener('click', function() {
+//     // Change the GIF to a new one and scale it
+//     let valentineImage = document.getElementById('valentineImage');
+//     valentineImage.src = "images/melody-hearts.gif";
+//     valentineImage.style.transform = "scale(2)"; // Increase the scale as desired
 
-    // Change the Valentine's question
+//     // Change the Valentine's question
+//     document.getElementById('valentineQuestion').innerHTML = "You made my day!";
+
+//     // Hide both buttons
+//     document.getElementById('yesButton').style.display = 'none';
+//     document.getElementById('noButton').style.display = 'none';
+// });
+document.getElementById('yesButton').addEventListener('click', function() {
+    // Show all GIFs by removing the 'hidden' class
+    document.querySelectorAll('.valentineGif').forEach(function(img) {
+        img.classList.remove('hidden');
+    });
+
+    // Optionally, change the Valentine's question
     document.getElementById('valentineQuestion').innerHTML = "You made my day!";
 
     // Hide both buttons

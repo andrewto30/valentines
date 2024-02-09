@@ -20,6 +20,22 @@ body, html {
     gap: 20px; /* Adjust the gap between buttons as needed */
 }
 
+.valentineGif {
+    width: 100px; /* Set a fixed width for all images */
+    height: 100px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the images cover the area without losing aspect ratio */
+}
+
+.hidden {
+    display: none; /* Hide elements with this class */
+}
+
+#imagesContainer {
+    display: flex; /* Align images next to each other */
+    justify-content: center; /* Center images container */
+    gap: 10px; /* Space between images */
+}
+
 button {
     margin: 10px;
     padding: 10px 20px;

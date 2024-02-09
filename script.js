@@ -60,7 +60,7 @@ document.getElementById('yesButton').addEventListener('click', function() {
         img.classList.remove('hidden'); // Remove the class that hides them
         img.style.display = 'inline'; // Change display to make them visible
     });
-
+    document.getElementById('valentineImage').src = "images/melody-hearts.gif";
     document.getElementById('valentineQuestion').innerHTML = "<3";
     document.getElementById('yesButton').style.display = 'none';
     document.getElementById('noButton').style.display = 'none';

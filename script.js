@@ -55,15 +55,13 @@ document.getElementById('noButton').addEventListener('click', function() {
 //     document.getElementById('noButton').style.display = 'none';
 // });
 document.getElementById('yesButton').addEventListener('click', function() {
-    // Show all GIFs by removing the 'hidden' class
-    document.querySelectorAll('.valentineGif').forEach(function(img) {
-        img.classList.remove('hidden');
+    // Select all images with class 'valentineGif' and remove the 'hidden' class to display them
+    document.querySelectorAll('.valentineGif.hidden').forEach(function(img) {
+        img.classList.remove('hidden'); // Remove the class that hides them
+        img.style.display = 'inline'; // Change display to make them visible
     });
 
-    // Optionally, change the Valentine's question
-    document.getElementById('valentineQuestion').innerHTML = "You made my day!";
-
-    // Hide both buttons
+    document.getElementById('valentineQuestion').innerHTML = "<3";
     document.getElementById('yesButton').style.display = 'none';
     document.getElementById('noButton').style.display = 'none';
 });
